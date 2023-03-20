@@ -1,0 +1,222 @@
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/StringBuilders (master)
+$ pwd
+/e/2023_project/StringBuilders
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/StringBuilders (master)
+$ cd ..
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project
+$ pwd
+/e/2023_project
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project
+$ cd Patterns/
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns
+$ git init
+Initialized empty Git repository in E:/2023_project/Patterns/.git/
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git remote add origin https://github.com/akshetpatial/Patterns.git
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git remote -v
+origin  https://github.com/akshetpatial/Patterns.git (fetch)
+origin  https://github.com/akshetpatial/Patterns.git (push)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git pull origin main
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 600 bytes | 6.00 KiB/s, done.
+From https://github.com/akshetpatial/Patterns
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/akshetpatial/Patterns.git'
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/akshetpatial/Patterns/pull/new/master
+remote:
+To https://github.com/akshetpatial/Patterns.git
+ * [new branch]      master -> master
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        Patterns.iml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git commmit -m "Created the Patterns Directory and Initialize the Git"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git commit -m "Created the Patterns Directory and Initialize the Git"
+[master 4a7145a] Created the Patterns Directory and Initialize the Git
+ 5 files changed, 36 insertions(+)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 Patterns.iml
+ create mode 100644 src/com/akshet/patterns/Pattern.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git log -4 --all --graph
+* commit 4a7145ac53107fd326f7639c039f1537aeaa1411 (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Tue Mar 21 01:56:07 2023 +0530
+|
+|     Created the Patterns Directory and Initialize the Git
+|
+* commit 755946d607ed502e61a6e49d92be790a9f68739d (origin/master, origin/main)
+  Author: AKSHET PATIAL <44276149+akshetpatial@users.noreply.github.com>
+  Date:   Tue Mar 21 01:53:36 2023 +0530
+
+      Initial commit
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git push origin master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (12/12), 1.41 KiB | 241.00 KiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/akshetpatial/Patterns.git
+   755946d..4a7145a  master -> master
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git push origin master
+Everything up-to-date
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git log -4 --all --graph
+* commit 4a7145ac53107fd326f7639c039f1537aeaa1411 (HEAD -> master, origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Tue Mar 21 01:56:07 2023 +0530
+|
+|     Created the Patterns Directory and Initialize the Git
+|
+* commit 755946d607ed502e61a6e49d92be790a9f68739d (origin/main)
+  Author: AKSHET PATIAL <44276149+akshetpatial@users.noreply.github.com>
+  Date:   Tue Mar 21 01:53:36 2023 +0530
+
+      Initial commit
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/vcs.xml
+        Patterns.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git commit -m "Added the patterns.pdf file"
+[master 7069ccc] Added the patterns.pdf file
+ 2 files changed, 6 insertions(+)
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 Patterns.pdf
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git log -4 --all --graph
+* commit 7069ccce30bc00fd39620b240c70a1af3608d499 (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Tue Mar 21 01:57:41 2023 +0530
+|
+|     Added the patterns.pdf file
+|
+* commit 4a7145ac53107fd326f7639c039f1537aeaa1411 (origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Tue Mar 21 01:56:07 2023 +0530
+|
+|     Created the Patterns Directory and Initialize the Git
+|
+* commit 755946d607ed502e61a6e49d92be790a9f68739d (origin/main)
+  Author: AKSHET PATIAL <44276149+akshetpatial@users.noreply.github.com>
+  Date:   Tue Mar 21 01:53:36 2023 +0530
+
+      Initial commit
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 510.62 KiB | 15.96 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/akshetpatial/Patterns.git
+   4a7145a..7069ccc  master -> master
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git push origin master
+Everything up-to-date
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git log -4 --all --graph
+* commit 7069ccce30bc00fd39620b240c70a1af3608d499 (HEAD -> master, origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Tue Mar 21 01:57:41 2023 +0530
+|
+|     Added the patterns.pdf file
+|
+* commit 4a7145ac53107fd326f7639c039f1537aeaa1411
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Tue Mar 21 01:56:07 2023 +0530
+|
+|     Created the Patterns Directory and Initialize the Git
+|
+* commit 755946d607ed502e61a6e49d92be790a9f68739d (origin/main)
+  Author: AKSHET PATIAL <44276149+akshetpatial@users.noreply.github.com>
+  Date:   Tue Mar 21 01:53:36 2023 +0530
+
+      Initial commit
+
