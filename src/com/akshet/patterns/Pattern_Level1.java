@@ -1,6 +1,5 @@
 package com.akshet.patterns;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Pattern_Level1 {
@@ -170,7 +169,6 @@ public class Pattern_Level1 {
                 for (int col1 = 0; col1 <= rows - row; col1++) {
                     System.out.print("* ");
                 }
-                System.out.print("\n");
             } else {
                 int row1 =row-rows;
                 for (int col = 0; col <rows - row1; col++) {
@@ -179,9 +177,81 @@ public class Pattern_Level1 {
                 for (int col1 = 0; col1 < row1; col1++) {
                     System.out.print("* ");
                 }
-                System.out.print("\n");
             }
+            System.out.print("\n");
         }
+    }
+
+    public static void pattern_12(int rows){
+        System.out.println("Pattern 12");
+        for(int row=1;row<=2*rows-1;row++) {
+            if(row<=rows){
+                for(int col=0;col<rows-row;col++){
+                    System.out.print(" ");
+                }
+                for(int col=0;col<row;col++){
+                    System.out.print("* ");
+                }
+            }else{
+                for(int col=rows;col<row;col++){
+                    System.out.print(" ");
+                }
+                for(int col=0;col<(2*rows)-row;col++){
+                    System.out.print("* ");
+                }
+            }
+            System.out.print("\n");
+        }
+    }
+
+    public static void pattern_13(int rows){
+        System.out.println("Pattern 13");
+        for(int row=1;row<rows;row++) {
+                for(int col=0;col<rows-row;col++){
+                    System.out.print(" ");
+                }
+                if(row==1) {
+                    System.out.print("*");
+                }else {
+                    System.out.print("*");
+                    for (int col = 0; col < (2*row)-3; col++) {
+                        System.out.print(" ");
+                    }
+                    System.out.print("*");
+                }
+            System.out.print("\n");
+        }
+        for(int last =1;last<=(2*rows)-1;last++){
+            System.out.print("*");
+        }
+    }
+
+    public static void pattern_14(int rows){
+        System.out.println("\nPattern 14");
+        for(int last =1;last<=(2*rows)-1;last++){
+            System.out.print("*");
+        }
+        System.out.print("\n");
+        for(int row=1;row<rows;row++) {
+            for(int col=0;col<row;col++){
+                System.out.print(" ");
+            }
+            if(row==rows-1) {
+                System.out.print("*");
+            }else {
+                System.out.print("*");
+                for (int col = 0; col <2*(rows-row)-3; col++) {
+                    System.out.print(" ");
+                }
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+
+    }
+
+    public static void pattern_15(int rows){
+        System.out.println("Pattern 15");
     }
 
     public static void main(String[] args) {
@@ -288,7 +358,47 @@ public class Pattern_Level1 {
       * * * *
      * * * * *
     */
-
         pattern_11(rows);
+    /*
+          *
+         * *
+        * * *
+       * * * *
+      * * * * *
+       * * * *
+        * * *
+         * *
+          *
+    */
+       pattern_12(rows);
+    /*   *
+        * *
+       *   *
+      *     *
+     *********
+    */
+        pattern_13(rows);
+    /*
+     *********
+      *     *
+       *   *
+        * *
+         *
+    */
+        pattern_14(rows);
+    /*
+            *
+           * *
+          *   *
+         *     *
+        *       *
+         *     *
+          *   *
+           * *
+            *
+    */
+        pattern_15(rows);
+
     }
+
 }
