@@ -366,3 +366,88 @@ $ git status
 On branch master
 nothing to commit, working tree clean
 
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   out/production/Patterns/com/akshet/patterns/Pattern_Level1.class
+        modified:   src/com/akshet/patterns/Pattern_Level1.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/com/akshet/patterns/Pattern_Level2.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git add out/production/Patterns/com/akshet/patterns/Pattern_Level1.class src/com/akshet/patterns/Pattern_Level1.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git commit -m "Added the Pattern 16 to 20 in Pattern_Level1.java file"
+[master 6d29054] Added the Pattern 16 to 20 in Pattern_Level1.java file
+ 2 files changed, 179 insertions(+), 1 deletion(-)
+ rewrite out/production/Patterns/com/akshet/patterns/Pattern_Level1.class (78%)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/com/akshet/patterns/Pattern_Level2.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git commit -m "Created the Pattern_Level2.java file"
+[master e5c41b2] Created the Pattern_Level2.java file
+ 1 file changed, 13 insertions(+)
+ create mode 100644 src/com/akshet/patterns/Pattern_Level2.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git log -4 --all --graph
+* commit e5c41b25fc5d7415ce639d4aabd0ec4cdeb739f9 (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 23 02:01:12 2023 +0530
+|
+|     Created the Pattern_Level2.java file
+|
+* commit 6d29054b4d09c8934a87872aa15a08f22f4339f9
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 23 02:00:26 2023 +0530
+|
+|     Added the Pattern 16 to 20 in Pattern_Level1.java file
+|
+* commit a6418f61e03ca632fe2b549f2fb043a80a5569c2 (origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Wed Mar 22 13:23:43 2023 +0530
+|
+|     added command related to Pattern 12 to 15 in commands.txt file
+|
+* commit f41ca211dabd8a81ea159935955ab4a2a76c539f
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Wed Mar 22 13:22:20 2023 +0530
+|
+|     added Pattern 12 to 15 in Pattern+Level1.java file
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git push origin master
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (21/21), 5.71 KiB | 649.00 KiB/s, done.
+Total 21 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/akshetpatial/Patterns.git
+   a6418f6..e5c41b2  master -> master
+
