@@ -201,6 +201,19 @@ public class Pattern_Level2 {
         }
     }
 
+    public static void pattern_12(int rows){
+        System.out.println("pattern 12");
+        for(int row=1;row<=rows;row++){
+            for(int col=1;col<=row;col++)
+                System.out.print(col);
+            for(int col=1;col<=2*(rows-row);col++)
+                System.out.print(" ");
+            for(int col=1;col<=row;col++)
+                System.out.print(row-col+1);
+            System.out.print("\n");
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("Enter the number of rows you want to print the pattern! ");
         Scanner scan = new Scanner(System.in);
@@ -302,6 +315,14 @@ public class Pattern_Level2 {
        A B C D E
     */
         pattern_11(rows);
+
+    /*
+       1      1
+       12    21
+       123  321
+       12344321
+    */
+        pattern_12(rows);
     }
 
 }
