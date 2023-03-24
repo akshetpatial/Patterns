@@ -451,3 +451,37 @@ remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
 To https://github.com/akshetpatial/Patterns.git
    a6418f6..e5c41b2  master -> master
 
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/com/akshet/patterns/Pattern_Level1.java
+        modified:   src/com/akshet/patterns/Pattern_Level2.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        out/production/Patterns/com/akshet/patterns/Pattern_Level2.class
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git add src/com/akshet/patterns/Pattern_Level1.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git commit -m "Change 2 to 0 in the comment"
+[master f10c740] Change 2 to 0 in the comment
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Patterns (master)
+$ git commit -m "Created file Pattern_Level2.java and added the Patterns from Pattern 1 to 11"
+[master 1d50789] Created file Pattern_Level2.java and added the Patterns from Pattern 1 to 11
+ 2 files changed, 294 insertions(+)
+ create mode 100644 out/production/Patterns/com/akshet/patterns/Pattern_Level2.class
+
+
+
