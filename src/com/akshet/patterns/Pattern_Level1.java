@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 /*
-Its better to use index of rows and columns from 1 instead of 2 as it makes the logic bit easy to decode.
+Its better to use index of rows and columns from 1 instead of 0 as it makes the logic bit easy to decode.
 */
 public class Pattern_Level1 {
 
